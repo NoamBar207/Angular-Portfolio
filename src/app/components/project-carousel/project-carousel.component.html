@@ -1,0 +1,17 @@
+<section class="project-showcase-container" id="project-showcase-container" *ngIf="project.showcase">
+    <section-header [info]=" info"></section-header>
+    <article class="showcase-container" (mouseleave)="onMouseLeave()">
+        <div class="slides-container">
+            <div class="showcase-slide" *ngFor="let slide, of project.showcase; index as i"
+                style="background-image:url({{slide.img}})" (mouseenter)="onMouseEnter($event,i)"
+                [ngsRevealSet]="{ reset:false, origin:'top', distance:'125px'}" [ngsInterval]="100"
+                [ngsSelector]="'.showcase-slide'">
+                <h1>{{slide.showcaseTitle}}</h1>
+            </div>
+        </div>
+        <div class="showcase-slide-view" *ngIf="hoverSlideIdx" (mouseleave)="onMouseLeave()">
+            <carousel [showcase]="project.showcase" [index]="hoverSlideIdx" (onMouseLeave)="onMouseLeave"
+                [windowWidth]="getScreenWidth"></carousel>
+        </div>
+    </article>
+</section>

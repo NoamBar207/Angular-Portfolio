@@ -1,0 +1,89 @@
+@import "../../../../assets/global-styles/_variables.scss";
+@import "../../../../assets/global-styles/_mixins.scss";
+
+.media-btns-container {
+  @include flex-center;
+  text-align: center;
+  gap: 20px;
+  margin-top: 12px;
+  width: fit-content;
+
+  a {
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid $clr-main-txt;
+    color: $clr-main-txt;
+    border-radius: 50%;
+    font-size: 32px;
+    transition: 0.5s ease;
+
+    &:hover {
+      background-color: $clr-main-txt;
+      color: white;
+      box-shadow: 0 0 1rem $clr-main-txt;
+    }
+
+    .resume-btn {
+      height: 38px;
+      width: 38px;
+    }
+  }
+
+  &.footer-media-btns {
+    gap: 8px;
+    a {
+      border: unset;
+      color: $clr-main-bg;
+      font-size: 36px;
+      position: relative;
+
+      .resume-btn {
+        position: absolute;
+        height: 42px;
+        width: 42px;
+      }
+
+      &:hover {
+        background-color: unset;
+        color: white;
+        // box-shadow: 0 0 1rem $clr-main-bg;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@include for-laptop-layout {
+  .media-btns-container {
+    gap: 8px;
+
+    a {
+      height: 40px;
+      width: 40px;
+      font-size: 26px;
+
+      .resume-btn {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+@include for-mobile-layout {
+  .media-btns-container {
+    gap: 8px;
+
+    a {
+      height: 30px;
+      width: 30px;
+      font-size: 20px;
+      .resume-btn {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}

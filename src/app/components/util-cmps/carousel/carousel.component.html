@@ -1,0 +1,28 @@
+<c-carousel class="carousel-content" [touch]="true" [interval]="0" [activeIndex]="index-1">
+    <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of showcase">
+            <div class="carousel-img-container">
+                <img alt="{{slide.showcaseTitle}}" class="carousel-img" loading="lazy" src="{{slide.img}}" />
+                <div class="site-msg" (click)="onImgClick(slide.img)">Click On Me For Full Size</div>
+            </div>
+            <div class="carousel-info">
+                <h3>{{slide.showcaseTitle}}</h3>
+                <!-- <p>{{slide.info}}</p> -->
+                <div class="info-container">
+                    <span *ngFor="let txt of slide.info2" class="info">
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>{{txt}}</span>
+                    </span>
+                </div>
+            </div>
+        </c-carousel-item>
+    </c-carousel-inner>
+    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+    <button class="exit-carousel-mobile" (click)="onExitCarousel()"><i class="fa-solid fa-x"></i></button>
+</c-carousel>
+<div class="full-screen-img-container" #fullScreenImg>
+    <div class="full-screen-img" style="background-image:url({{imgClicked}})">
+        <button class="exit-carousel-mobile" (click)="onImgClick('exit')"><i class="fa-solid fa-x"></i></button>
+    </div>
+</div>

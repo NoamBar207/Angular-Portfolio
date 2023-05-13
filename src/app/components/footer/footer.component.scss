@@ -1,0 +1,55 @@
+@import "../../../assets/global-styles/_variables.scss";
+@import "../../../assets/global-styles/_mixins.scss";
+
+.footer-container {
+  @include flex-center-column;
+  gap: 48px;
+  background-color: $clr-card-bg;
+  margin-top: 64px;
+  padding: 48px 0;
+  color: $clr-main-bg;
+
+  .footer-title {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  button {
+    font-size: 15px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .footer-nav-container {
+    @include flex-center;
+    gap: 32px;
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+
+  .copy-rights {
+    margin-bottom: 80px;
+  }
+}
+
+@include for-mobile-layout {
+  .footer-container {
+    gap: 24px;
+
+    .footer-nav-container {
+      gap: 16px;
+      padding: 0 20%;
+    }
+  }
+}
+
+@include for-narrow-mobile-layout {
+  .footer-container {
+    .footer-nav-container {
+      padding: 0 15%;
+    }
+  }
+}

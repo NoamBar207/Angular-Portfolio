@@ -1,0 +1,38 @@
+<section class="contact-container" id="contact-container">
+    <!-- <div class="contact-me">
+        <span>Contact</span><span class="span-color">Me.</span>
+    </div> -->
+    <section-header [info]="info"></section-header>
+    <article class="contact-content-container">
+        <div class="contact-cards-container">
+            <div class="card contact-card" *ngFor="let card of contactCards"
+                [ngsRevealSet]="{ reset:false, origin:'left',distance:'70px'}" [ngsInterval]="200"
+                [ngsSelector]="'.contact-card'" aTilt>
+                <span class="card-icon"><i [class]="card.icon"></i></span>
+                <h4>{{card.title}}</h4>
+                <h5>{{card.desc}}</h5>
+                <a [href]="card.link" target="_blank">Send a message!</a>
+            </div>
+
+        </div>
+        <div class="contact-form" [ngsReveal]="{reset:false, origin:'right', distance:'150px'}">
+            <h1>Or <span>Mail Me</span> Here!</h1>
+            <form (submit)="sendEmail($event)">
+                <div class="input-wrap">
+                    <input name="name" type="text" class="input-text" (focusout)="handleFoucusOut($event)" required />
+                    <label class="floating-label">What is your name?</label>
+                </div>
+                <div class="input-wrap" (focusout)="handleFoucusOut($event)">
+                    <input name="email" type="email" class="input-text" required ngModel email="true" />
+                    <label class="floating-label" id="email">What is your email?</label>
+                </div>
+                <div class="input-wrap">
+                    <textarea name="message" class="input-text textarea" (focusout)="handleFoucusOut($event)"
+                        required></textarea>
+                    <label class="floating-label">Write message here</label>
+                </div>
+                <button class="util-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </article>
+</section>

@@ -1,0 +1,38 @@
+<section class="about-me-container" id="about-me-container">
+    <section-header [info]="info"></section-header>
+    <main class="about-me-content">
+        <article class="about-me-desc" [ngsReveal]="{origin:'left', distance:'150px'}">
+            <div class="about-me-cards">
+                <div *ngFor="let card of cardsArr" class="about-me-card"
+                    [ngsRevealSet]="{ reset:false, origin:'left', distance:'125px'}" [ngsInterval]="100"
+                    [ngsSelector]="'.about-me-card-container'" aTilt>
+                    <card [card]="card"></card>
+                </div>
+            </div>
+            <div class="about-me-content-text">
+                Fullstack / Frontend Web Developer, specializing in single page applications using the latest Web
+                technologies, Node.js (express), React.js, CSS (SASS), HTML5.
+                <br>
+                Graduate of the BEST academy, Coding Academy ⭐.
+                <br>
+                Up to 640 intensive and pure fun hours of coding bootcamp qualifies Full-Stack Developers.
+                <br>
+                I have passion for software and learning new tools and technologies and I will be happy to hear about
+                other roles also.
+            </div>
+            <button class="util-btn big-btn" (click)="onScroll.emit('contact-container')"
+                (ngsReveal)="{reset:true}">Let's Talk</button>
+        </article>
+        <article class="about-me-img-container" [ngsReveal]="{origin:'right', distance:'150px'}">
+            <div class="about-hex" aTilt
+                style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1679926922/hexagon-geometrical-shape-outline-svgrepo-com_2_cwnvhe.png')">
+                <div class="about-img"
+                    style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1679934154/IMG_3229-A8feNfIJC-transformed-transformed_vp12ed_9a9688.png')">
+                    <!-- style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1679926389/IMG_3229-A8feNfIJC-transformed-transformed_vp12ed.png')"> -->
+                    <!-- style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1680267649/IMG_3211--QdxVEMTT-transformed_cd8rxf.png')" -->
+                </div>
+            </div>
+        </article>
+    </main>
+
+</section>

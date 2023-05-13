@@ -1,0 +1,69 @@
+@import "../../../../assets/global-styles/_variables.scss";
+@import "../../../../assets/global-styles/_mixins.scss";
+
+.card-container {
+  height: 100%;
+  width: 100%;
+  font-weight: 500;
+  position: relative;
+
+  .card-icon {
+    font-size: 24px;
+  }
+
+  .card-main-text {
+    flex: 1;
+    color: $clr-secondary-txt;
+  }
+
+  .exclusive {
+    position: absolute;
+    right: -5px;
+    top: 25px;
+    transform: rotate(30deg);
+    background-color: $clr-exclusive-bg;
+    border-radius: 1rem;
+    padding: 2px 5px;
+    box-shadow: rgba(71, 76, 82, 0.2) 0px 8px 24px;
+  }
+}
+
+.card {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+@include for-tablet-layout {
+  .about-me-card-container {
+    .card-main-text {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) and (min-width: 550px) {
+  .card-container {
+    .exclusive {
+      font-size: 12px;
+      top: 22px;
+    }
+  }
+}
+
+@include for-mobile-layout {
+  .about-me-card-container {
+    width: 100%;
+    .card-main-text {
+      font-size: 16px;
+    }
+  }
+}
+
+@include for-narrow-mobile-layout {
+  .card-container {
+    .exclusive {
+      font-size: 12px;
+      top: 22px;
+    }
+  }
+}

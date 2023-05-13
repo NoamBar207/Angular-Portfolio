@@ -1,0 +1,9 @@
+<section class="projects-contianer" id="projects-contianer">
+    <section-header [info]="info"></section-header>
+    <article class="cards-container">
+        <div *ngFor="let project of projects" [ngsRevealSet]="{ reset:false, origin:'bottom',distance:'70px'}"
+            [ngsInterval]="200" [ngsSelector]="'.project-preview'">
+            <project-preview [project]="project"></project-preview>
+        </div>
+    </article>
+</section>

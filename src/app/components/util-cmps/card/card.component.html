@@ -1,0 +1,8 @@
+<section class="card-container card">
+    <span class="card-icon">
+        <i [class]="card.icon"></i>
+    </span>
+    <span class="card-title">{{card.title}}</span>
+    <span class="card-main-text">{{card.desc}}</span>
+    <div *ngIf="card.myOwn" class="exclusive">{{card.myOwn}}!</div>
+</section>

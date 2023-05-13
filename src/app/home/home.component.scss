@@ -1,0 +1,34 @@
+@import "../../assets/global-styles/_variables.scss";
+@import "../../assets/global-styles/_mixins.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 140px;
+  gap: 64px;
+}
+
+@include for-laptop-layout {
+  .main-container {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .main-container {
+    padding: 0 70px;
+  }
+}
+
+@include for-narrow-laptop-layout {
+  .main-container {
+    gap: 48px;
+  }
+}
+
+@include for-mobile-layout {
+  .main-container {
+    padding: 0 30px;
+  }
+}

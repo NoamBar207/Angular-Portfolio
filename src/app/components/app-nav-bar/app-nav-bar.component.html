@@ -1,0 +1,7 @@
+<section class="app-nav-bar-container">
+    <nav class="app-nav-bar-actions">
+        <button *ngFor="let navButton of navButtons" [title]="navButton.title" (click)="scroll(navButton.ref)">
+            <span><i [class]="navButton.icon"></i></span>
+        </button>
+    </nav>
+</section>

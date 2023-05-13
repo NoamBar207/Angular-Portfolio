@@ -1,0 +1,50 @@
+@import "../../../assets/global-styles/_variables.scss";
+@import "../../../assets/global-styles/_mixins.scss";
+
+.project-features-container {
+  @include flex-center-column;
+  margin-bottom: 128px;
+  height: 100%;
+
+  .features-container {
+    @include flex-center;
+    gap: 24px;
+    height: 270px;
+
+    .project-feature {
+      text-align: center;
+      width: 25%;
+      height: 100%;
+      ::ng-deep .card {
+        .card-icon {
+          font-size: 36px;
+        }
+        .card-title {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@include for-laptop-layout {
+  .project-features-container {
+    .features-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100%;
+      gap: 12px;
+      .project-feature {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project-features-container {
+    .features-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

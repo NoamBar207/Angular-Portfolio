@@ -1,0 +1,114 @@
+@import "../../../assets/global-styles/_mixins.scss";
+@import "../../../assets/global-styles/_variables.scss";
+
+.skills-cmp-container {
+  @include flex-center-column;
+
+  .cards-container {
+    .card {
+      width: 100%;
+      padding: 30px 20px;
+
+      h1 {
+        font-size: 16px;
+      }
+
+      .skills-card {
+        display: grid;
+        column-gap: 8px;
+        row-gap: 4px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        flex: 1;
+        text-align: center;
+        width: 100%;
+
+        .skill-line {
+          display: flex;
+          align-items: center;
+          padding: 0 12px;
+          gap: 8px;
+        }
+      }
+      &:hover {
+        h1 {
+          color: $clr-main-txt;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .skills-cmp-container {
+    .cards-container {
+      .card {
+        .skills-card {
+          grid-template-columns: 1fr;
+          .skill-line {
+            margin-left: 15%;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-tablet-layout {
+  .skills-cmp-container {
+    .cards-container {
+      @include flex-center-column;
+      .card {
+        // max-width: 320px;
+        width: 100%;
+        padding: 30px 20px;
+
+        .skills-card {
+          grid-template-columns: 130px 130px;
+          justify-content: center;
+
+          .skill-line {
+            padding: 0 12px;
+            margin-left: 0;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-mobile-layout {
+  .skills-cmp-container {
+    .cards-container {
+      .card {
+        max-width: 100%;
+        .skills-card {
+          padding-left: 20px;
+          .skill-line {
+            padding: 0;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-cmp-container {
+    .cards-container {
+      .card {
+        padding: 30px 0;
+        .skills-card {
+          padding-left: 0;
+          grid-template-columns: 1fr;
+          .skill-line {
+            margin-left: 15%;
+          }
+        }
+      }
+    }
+  }
+}

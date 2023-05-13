@@ -1,0 +1,163 @@
+@import "../../../assets/global-styles/_variables.scss";
+@import "../../../assets/global-styles/_mixins.scss";
+
+.about-me-container {
+  @include flex-center-column;
+  height: 100%;
+  margin-bottom: 64px;
+
+  .about-me-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .about-me-img-container {
+      @include flex-center;
+
+      .about-hex {
+        width: 100%;
+        @include flex-center;
+        background: center center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin-left: 25px;
+        position: relative;
+
+        .about-img {
+          background: center center no-repeat;
+          background-size: contain;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          bottom: 10%;
+          right: 5px;
+        }
+      }
+    }
+
+    .about-me-desc {
+      width: 100%;
+      gap: 32px;
+      display: flex;
+      flex-direction: column;
+
+      .about-me-cards {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        gap: 12px;
+        text-align: center;
+
+        .about-me-card {
+          box-sizing: border-box;
+          width: 33%;
+        }
+      }
+
+      .about-me-content-text {
+        font-size: 16px;
+        color: $clr-secondary-txt;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about-me-container {
+    margin-bottom: 0;
+    .about-me-content {
+      .about-me-img-container {
+        width: 100%;
+        height: 350px;
+        .about-hex {
+          height: 100%;
+          // width: 350px;
+          .about-img {
+            height: 85%;
+          }
+        }
+      }
+
+      .about-me-desc {
+        .about-me-content-text {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include for-narrow-laptop-layout {
+  .about-me-container {
+    .about-me-content {
+      @include flex-center-column;
+      gap: 48px;
+
+      .about-me-img-container {
+        .about-hex {
+          // height: 400px;
+          // width: 400px;
+          margin: 0;
+          .about-img {
+            height: 100%;
+            right: 2%;
+          }
+        }
+      }
+      .about-me-desc {
+        .about-me-content-text {
+          font-size: 17px;
+        }
+        .util-btn {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+@include for-mobile-layout {
+  .about-me-container {
+    .about-me-content {
+      .about-me-img-container {
+        // display: none;
+      }
+      .about-me-desc {
+        .about-me-cards {
+          flex-direction: column;
+          .about-me-card {
+            width: 100%;
+          }
+        }
+        .about-me-content-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@include for-narrow-mobile-layout {
+  .about-me-container {
+    .about-me-content {
+      .about-me-img-container {
+        .about-hex {
+          margin: 0;
+          .about-img {
+            height: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .about-me-container {
+    .about-me-content {
+      .about-me-img-container {
+        display: none;
+      }
+    }
+  }
+}

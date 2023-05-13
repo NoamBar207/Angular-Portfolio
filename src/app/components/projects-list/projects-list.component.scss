@@ -1,0 +1,21 @@
+@import "../../../assets/global-styles/_mixins.scss";
+
+.projects-contianer {
+  @include flex-center-column;
+}
+
+@include for-tablet-layout {
+  .projects-contianer {
+    .cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-contianer {
+    .cards-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

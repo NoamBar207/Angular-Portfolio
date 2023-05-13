@@ -1,0 +1,15 @@
+<section class="project-preview card">
+    <div class="project-preview-img" style="background-image:url({{project.img}})"></div>
+    <article class="project-prev-content">
+        <div class="project-desc">
+            <h1 class="project-preview-title">{{project.name}}</h1>
+            <h4 class="project-preview-info">{{project.info}}</h4>
+        </div>
+        <div class="button-container">
+            <button class="util-btn util-btn-dark"><a [routerLink]="['/project', project._id ]">Read More</a></button>
+            <button class="util-btn"><a [href]="project.link" target="_blank">Check It!</a></button>
+        </div>
+        <div>
+        </div>
+    </article>
+</section>

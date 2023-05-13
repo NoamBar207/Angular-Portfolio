@@ -1,0 +1,20 @@
+<section class="skills-cmp-container" id="skills-cmp-container">
+    <section-header [info]="info"></section-header>
+    <article class="cards-container">
+        <div *ngFor="let tech of developTech" class="card"
+            [ngsRevealSet]="{ reset:false, origin:'bottom', distance:'125px'}" [ngsInterval]="100"
+            [ngsSelector]="'.card'" aTilt>
+            <h1>{{tech.name}}</h1>
+            <div class="skills-card">
+                <span *ngFor="let skill of tech.techSkills" class="skill-line">
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                    <span>
+                        {{skill.name}}
+                    </span>
+                </span>
+            </div>
+        </div>
+    </article>
+</section>

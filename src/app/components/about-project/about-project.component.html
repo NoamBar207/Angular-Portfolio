@@ -1,0 +1,21 @@
+<section class="about-project-container" id="about-project-container">
+    <section-header [info]="info"></section-header>
+    <article class="about-project-content">
+        <div class="project-desc" [ngsReveal]="{origin:'left', distance:'150px'}">
+            <div class="project-dots-container">
+                <card *ngFor="let dot of project.dots" [card]="dot" aTilt></card>
+            </div>
+            <h3 class="project-info">{{ project.mainInfo }}</h3>
+            <div class="actions">
+                <a class=" util-btn" [href]="project.url" target="_blank">
+                    Check It Out!
+                </a>
+                <a class="media-btn" [href]="project.repoLink" title="Repository">
+                    <span><i class="fa-brands fa-github"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="project-img" style="background-image:url({{project.bg}})"
+            [ngsReveal]="{origin:'right', distance:'150px'}" aTilt></div>
+    </article>
+</section>

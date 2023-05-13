@@ -1,0 +1,126 @@
+@import "../../../assets/global-styles/_variables.scss";
+@import "../../../assets/global-styles/_mixins.scss";
+
+.contact-container {
+  .contact-content-container {
+    display: flex;
+    gap: 48px;
+
+    .contact-cards-container {
+      @include flex-center-column;
+      gap: 18px;
+
+      .card {
+        width: 100%;
+        gap: 6px;
+
+        .card-icon {
+          font-size: 30px;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+
+        h5 {
+          font-size: 16px;
+          margin-bottom: 6px;
+        }
+
+        a {
+          transition: all 0.5s ease;
+          color: $clr-main-bg;
+          font-weight: 600;
+        }
+
+        &:hover {
+          background-color: $clr-main-bg;
+          // color: $clr-main-txt;
+          box-shadow: 0 0 1rem $clr-main-bg;
+          a {
+            color: $clr-main-txt;
+            // color: $clr-secondary-txt;
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      font-size: 18px;
+      flex: 1;
+      margin-top: 8px;
+      color: $clr-secondary-txt;
+      h1 {
+        font-size: 24px;
+        margin-bottom: 6px;
+        span {
+          color: $clr-main-txt;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .input-wrap {
+          position: relative;
+
+          .input-text {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $clr-main-txt;
+            border-radius: 0;
+            outline: 0;
+            height: 3rem;
+            width: 100%;
+            font-size: 16px;
+            margin: 0 0 8px 0;
+            padding: 0;
+            box-shadow: none;
+            box-sizing: content-box;
+            transition: box-shadow 0.3s, border 0.3s;
+            color: $clr-main-txt;
+          }
+
+          .textarea {
+            height: 155px;
+            margin-top: 15px;
+            resize: none;
+          }
+
+          .floating-label {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            pointer-events: none;
+            transition: font-size 250ms ease, top 250ms ease;
+          }
+
+          .input-text:focus ~ .floating-label,
+          .input-text:not(:focus):valid ~ .floating-label {
+            top: -10px;
+            bottom: 0px;
+            left: 0px;
+            font-size: 12px;
+            opacity: 1;
+            transition: top 250ms ease, font-size 400ms ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-narrow-laptop-layout {
+  .contact-container {
+    .contact-content-container {
+      flex-direction: column;
+      .contact-form {
+        .util-btn {
+          align-self: center;
+        }
+      }
+    }
+  }
+}

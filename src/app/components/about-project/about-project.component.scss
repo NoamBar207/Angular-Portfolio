@@ -1,0 +1,183 @@
+@import "../../../assets/global-styles/_variables.scss";
+@import "../../../assets/global-styles/_mixins.scss";
+
+:host {
+  width: 100%;
+}
+
+.about-project-container {
+  @include flex-center-column;
+  margin-bottom: 128px;
+
+  ::ng-deep section-header {
+    position: static;
+    .about-me-header {
+      padding: 0 !important;
+      :first-child {
+        font-size: 14px !important;
+      }
+      :nth-child(2) {
+        font-size: 24px !important;
+      }
+    }
+  }
+
+  .about-project-content {
+    width: 100%;
+    height: 400px;
+    @include flex-center;
+    gap: 24px;
+
+    .project-desc {
+      @include flex-center-column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+
+      .project-dots-container {
+        @include flex-center;
+        text-align: center;
+        gap: 12px;
+
+        ::ng-deep card {
+          width: 100%;
+          height: 100%;
+
+          .card-container {
+            padding: 15px 20px;
+
+            .card-title {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+      }
+
+      .actions {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .media-btn {
+          border-radius: 50%;
+          // filter: grayscale(100%);
+          // transition: filter 500ms ease;
+          span {
+            color: $clr-main-txt;
+            height: 40px;
+            font-size: 40px;
+            transform: translateY(50%);
+          }
+        }
+      }
+
+      .project-info {
+        color: $clr-secondary-txt;
+        font-size: 18px;
+      }
+    }
+
+    .project-img {
+      width: 60%;
+      height: 290px;
+      background-position: center top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      // aspect-ratio: 2500 / 1700;
+    }
+  }
+}
+
+@include for-laptop-layout {
+  .about-project-container {
+    .about-project-content {
+      height: 100%;
+      gap: 36px;
+
+      .project-desc {
+        justify-content: center;
+        gap: 24px;
+
+        .project-dots-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          ::ng-deep card {
+            .card-container {
+              gap: 6px;
+            }
+          }
+        }
+
+        .project-info {
+          font-size: 16px;
+        }
+      }
+
+      .project-img {
+        width: 70%;
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about-project-container {
+    .about-project-content {
+      flex-direction: column;
+      .project-desc {
+        justify-content: center;
+        gap: 24px;
+        text-align: center;
+
+        .project-dots-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          width: 100%;
+        }
+
+        .actions {
+          justify-content: center;
+        }
+      }
+      .project-img {
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-project-container {
+    .about-project-content {
+      .project-img {
+        height: 300px;
+      }
+    }
+  }
+}
+
+@include for-mobile-layout {
+  .about-project-container {
+    .about-project-content {
+      .project-img {
+        max-height: 200px;
+        // aspect-ratio: 2500 / 1700;
+      }
+
+      .project-desc {
+        .project-dots-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}

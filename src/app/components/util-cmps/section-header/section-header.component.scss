@@ -1,0 +1,18 @@
+@import "../../../../assets/global-styles/_variables.scss";
+@import "../../../../assets/global-styles/_mixins.scss";
+
+.about-me-header {
+  @include flex-center-column;
+  margin-bottom: 48px;
+
+  :first-child {
+    font-size: 14px;
+    color: $clr-secondary-txt;
+    width: fit-content;
+  }
+  :nth-child(2) {
+    color: $clr-main-txt;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}

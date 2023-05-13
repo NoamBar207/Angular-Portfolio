@@ -1,0 +1,10 @@
+<section>
+    <hero></hero>
+    <section class="main-container">
+        <about-me (onScroll)="scrollTo($event)"></about-me>
+        <skills [developTech]="(developTech$|async)!"></skills>
+        <project-list [projects]="(projects$|async)!"></project-list>
+        <contact></contact>
+    </section>
+    <app-nav-bar (onScroll)="scrollTo($event)" [navButtons]="navButtons"></app-nav-bar>
+</section>

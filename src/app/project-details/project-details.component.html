@@ -1,0 +1,60 @@
+<section class="project-details-container">
+    <article class="project-content">
+        <div class="header-container" id="header-container">
+            <particels [maxNumber]="80"></particels>
+            <section-header [info]="info"></section-header>
+        </div>
+        <about-project [project]="project"></about-project>
+        <project-features [project]="project"></project-features>
+        <project-carousel [project]="project"></project-carousel>
+    </article>
+
+
+    <!-- <div class="project-header" [style]="{ 'background-image': 'url(' + project.bg + ')' }">
+        <div [style]="{ 'background-image': 'url(' + project.bg + ')' }"></div>
+        <article class="project-main">
+            <h2 class="project-title">{{ project.title }}</h2>
+            <h5 class="project-info">{{ project.mainInfo }}</h5>
+            <h5 class="project-technologies" [innerHTML]="project.technologies"></h5>
+        </article>
+    </div> -->
+    <contact></contact>
+    <app-nav-bar (onScroll)="scrollTo($event)" [navButtons]="navButtons"></app-nav-bar>
+</section>
+
+
+<!-- <section class="about-project-container" v-if="project">
+    <service-comp :features="project.features" />
+    <section class="project-showcase-container">
+        <h2 class="project-showcase-header">Show Case:</h2>
+        <carousel @next="next" @prev="prev">
+            <carousel-slide class="project-showcase" v-for="(sc, index) in project.showcase" :key="sc" :index="index"
+                :visibleSlide="visibleSlide" :direction="direction" :sc="sc">
+                <h3>{{ index + 1 }}) {{ sc.showcaseTitle }}</h3>
+                <img v-if="!sc.showcaseTitle.includes('Mobile!')" :src="sc.img" class="curr-img" />
+                <div v-else class="last-img-container">
+                    <img :src="sc.img" class="last-img" />
+                </div>
+            </carousel-slide>
+        </carousel>
+        <article class="project-showcase-prew-container">
+            <div class="prew-carousel" v-for="(sc, index) in project.showcase" :key="sc.showcaseTitle"
+                :style="{ 'background-image': 'url(' + sc.img + ')' }" @click="setVisibleSlide(index)">
+                <span v-if="visibleSlide === index" class="slide-ind"><i class="fa-solid fa-location-pin"></i></span>
+            </div>
+        </article>
+        <div class="carousel-side">
+            <div class="project-showcase-info">
+                <h4 class="info-title">Info:</h4>
+                <h3 class="info-txt">{{ slideInfo }}</h3>
+            </div>
+        </div>
+        <article v-if="project.moreAbout" class="more-info-container">
+            <h2>More About:</h2>
+            <div class="more-info-loop" v-for="(info, idx) in project.moreAbout" :key="idx">
+                <h3>{{ info }}</h3>
+            </div>
+        </article>
+
+    </section>
+</section> -->

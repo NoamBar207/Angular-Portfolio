@@ -1,0 +1,42 @@
+@import "../../../assets/global-styles/_mixins.scss";
+@import "../../../assets/global-styles/_variables.scss";
+
+.app-nav-bar-container {
+  position: fixed;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 24px;
+  @include flex-center;
+
+  .app-nav-bar-actions {
+    @include flex-center;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 24px;
+    border-radius: 54px;
+
+    button {
+      span {
+        font-size: 16px;
+        color: $clr-secondary-txt;
+      }
+
+      :hover {
+        // color: $clr-main-txt;
+        color: white;
+      }
+    }
+    a {
+      cursor: pointer;
+      span {
+        font-size: 16px;
+        color: $clr-secondary-txt;
+      }
+      &:active {
+        background-color: aqua;
+      }
+    }
+  }
+}
