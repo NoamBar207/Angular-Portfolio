@@ -1,0 +1,578 @@
+[
+  {
+    "_id": "mello",
+    "title": "Mello",
+    "mainInfo": "E2E, pixel perfect application for project management inspired by Trello. The app built in 2 weeks as a final project of the Coding Academy bootcamp with two other members. We utilized websockets to allow for real-time updates for all users, and API calls to the backend were made using REST API methods.",
+    "bg": "https://res.cloudinary.com/noambar/image/upload/v1673948000/Portfolio/Projects/fotor_2023-1-17_11_32_59_oadhqw.png",
+    "technologies": "The technology stack we used is MERN - MongoDB, Express, React, and Node.js. We utilized websockets to allow for real-time updates for all users, and API calls to the backend were made using REST API methods. Furthermore, we incorporated third-party libraries, such as React Beautiful D&D, date-picker, and more. The app's layout was designed using Sass, including functions, mixins, and variables.",
+    "features": [
+      {
+        "title": "Create of Your Choice",
+        "desc": "Create boards, and within each board you can create lists and tasks. You can move lists and tasks across the board using D&D.",
+        "icon": "fa-solid fa-square-plus"
+      },
+      {
+        "title": "Customize as You Like",
+        "desc": "Edit task to the deepest level: cover, labels, attachments, due dates, description, members, checklists. filter members and labels.",
+        "icon": "fa-solid fa-palette"
+      },
+      {
+        "title": "Side Menu & Activity Log",
+        "desc": "Activity log, background cover for the board. (on side-menu).",
+        "icon": "fa-solid fa-circle-arrow-left"
+      },
+      {
+        "title": "Authentication & Security",
+        "desc": "Login authentication, including encrypting user information using bcrypt.",
+        "icon": "fa-solid fa-lock"
+      }
+    ],
+    "showcase": [
+      {
+        "showcaseTitle": "Homepage",
+        "info": "The landing page provides the user with information about Mello and allows them to sign up/log in or start as a guest by pressing the 'Start Doing' button.",
+        "info2": [
+          "Learn more about Mello",
+          "Sign up or login to Mello",
+          "Try Mello as guest using the 'Start Doing' button"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1673784809/Portfolio/Projects/Trello/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6465626d626a7662682f696d6167652f75706c6f61642f76313636313738303031342f686f6d65706167655f7164647a67772e706e67_zpyd8f.png"
+      },
+      {
+        "showcaseTitle": "Workspace",
+        "info": "The Workspace is where the user can access all their boards, including any boards they have starred for quick access. The user can create a new board by choosing a title and selecting a background color or image, or they can start with one of the suggested templates provided by the app.",
+        "info2": [
+          "Acsess to all boards",
+          "View your favorite boards",
+          "Start new board from template",
+          "Create new board and coustomize its background image/color, title and more!"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1673784964/Portfolio/Projects/Trello/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6465626d626a7662682f696d6167652f75706c6f61642f76313636313738303236392f626f617264735f6667656b64692e706e67_t2yv3l.png"
+      },
+      {
+        "showcaseTitle": "The Board",
+        "info": "Our Kanban-style board offers all the features of Trello, allowing users to create and manage boards, lists, and tasks. They can easily move and edit tasks, including changing covers, labels, attachments, due dates, and descriptions. The board also supports filters, copy and remove functions, and the ability to add and manage board members.",
+        "info2": [
+          "Kanban style board which offers all Trello features",
+          "Create and mange tasks groups",
+          "Filter by labels, text, due date and more!",
+          "Rearange the board easily using D&D",
+          "Add members to your board"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1673785020/Portfolio/Projects/Trello/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6465626d626a7662682f696d6167652f75706c6f61642f76313636313738303331332f626f6172645f776f373764782e706e67_zginuy.png"
+      },
+      {
+        "showcaseTitle": "Task Details",
+        "info": "When clicking a task, task details is opened and the user can edit the task, label it, add a description, checklists and more. Every button on the right menu opens a dynamic modal, enabling a different action. All changes are being seen live, both in this page and the board's.",
+        "info2": [
+          "Edit task to deepest level - label, description, checklists, due date and more",
+          "Fully functional side menu for your desierd action",
+          "Assaing members to the task"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1673785110/Portfolio/Projects/Trello/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6465626d626a7662682f696d6167652f75706c6f61642f76313636313738303337332f7461736b64657461696c73315f6c727633787a2e706e67_h1ngsc.png"
+      },
+      {
+        "showcaseTitle": "Side Menu",
+        "info": "The side menu on the right (opened by clicking 'Show menu' button) displays the activity log of the board, documenting the time and action made by each member of the board. Moreover, users can change the background of the board by choosing from our selection of background images or upload directly from their computer.",
+        "info2": [
+          "Each action of the board being documented and displayed",
+          "Enable changing background image or color of the board",
+          "Uploading your on image and make it as backgorund"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1673785201/Portfolio/Projects/Trello/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6465626d626a7662682f696d6167652f75706c6f61642f76313636313738303436332f736964656d656e755f696f6b69636c2e706e67_uwcgrd.png"
+      },
+      {
+        "showcaseTitle": "Signup",
+        "info": "We have created an e2e authentication flow, in which we are encrypting user's information.",
+        "info2": [
+          "Easy login/signup mechanism",
+          "Login/signup via google account",
+          "Fully encrypted user data using bcrypt"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1673785275/Portfolio/Projects/Trello/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6465626d626a7662682f696d6167652f75706c6f61642f76313636313738303531322f7369676e75705f73377a647a702e706e67_wnhkys.png"
+      }
+    ],
+    "url": "https://mello-r9cy.onrender.com/",
+    "repoLink": "https://github.com/NoamBar207/Mello-Proj",
+    "dots": [
+      {
+        "title": "MERN Stack",
+        "desc": "MongoDB, Express, React, and Node.js.",
+        "icon": "fa-solid fa-cubes-stacked"
+      },
+      {
+        "title": "Other Libraries",
+        "desc": "Third party libraries - Redux, Socket.io, D&D, and more!",
+        "icon": "fa-solid fa-book"
+      },
+      {
+        "title": "Responsiveness",
+        "desc": "Fluent usage on all devices with full responsiveness.",
+        "icon": "fa-solid fa-laptop-code"
+      },
+      {
+        "title": "Security",
+        "desc": "Login auth with user info encrypted using bcrypt.",
+        "icon": "fa-solid fa-lock"
+      }
+    ]
+  },
+  {
+    "_id": "mellofy",
+    "title": "Mellofy",
+    "mainInfo": "E2E, pixel-perfect music application inspired by Spotify, but with a user-friendly touch. Integrated custom form/chat features, as well as the ability to follow and add followers to your playlists. Real-time updates for all users enabled using web sockets, with API calls to the backend made using REST methods.",
+    "bg": "https://res.cloudinary.com/noambar/image/upload/v1673889648/Portfolio/Projects/fotor_2023-1-16_19_18_55_qoi3f3.png",
+    "features": [
+      {
+        "title": "Create and Customizen",
+        "desc": "You can create playlist and change its picture. Songs can be added, removed, and rearranged in the desired order using D&D.",
+        "icon": "fa-solid fa-palette",
+        "myOwn": "Only On Mellofy"
+      },
+      {
+        "title": "Playlist Listeners",
+        "desc": "As you create a playlist, you can add listeners to it. Any changes made to the playlist will be updated in real-time for all listeners.",
+        "icon": "fa-solid fa-square-plus"
+      },
+      {
+        "title": "Mellofy Forum/Chatapp",
+        "desc": "The forum/chat app allows users to ask and answer questions with real-time responses.",
+        "icon": "fa-solid fa-comments",
+        "myOwn": "Only On Mellofy"
+      },
+      {
+        "title": "Authentication & Security",
+        "desc": "The app features login authentication with user information encrypted using bcrypt.",
+        "icon": "fa-solid fa-lock"
+      }
+    ],
+    "technologies": "The technology stack used for this project is MERN, which stands for - MongoDB, Express, React, and Node.js. <br> Real-time updates for all users were enabled using web sockets. API calls to the backend were made using REST methods. <br> Third-party libraries, such as Redux, React Beautiful D&D and React-YouTube, were also integrated into the project.<br> The app's layout was created using Sass, with features such as functions, mixins, and variables. <br> In an effort to differentiate from a simple Spotify clone, a custom form/chat feature was also added to the app.",
+    "showcase": [
+      {
+        "showcaseTitle": "Home Page",
+        "info": "The home page is the main interface of Mellofy, where users can listen to playlists created by Mellofy, sign up or log in, view the forum, and search for desired songs.",
+        "info2": [
+          "Listen to to playlists created by Mellofy",
+          "Sign up or login",
+          "View the Mellofy fourm",
+          "Search for desired songs"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/c_scale,h_1700/v1674052809/Portfolio/Projects/Mellofy/MellofyHomePage_ffxv8c.png"
+      },
+      {
+        "showcaseTitle": "Playlist Details",
+        "info": "The playlist details page allows the user to rearrange songs using drag-and-drop, change the playlist's name and image, manage listeners, like or unlike songs, and view the playlist's duration and creator.",
+        "info2": [
+          "Rearenge the songs order by D&D or delete songs",
+          "Mange Listeners of your playlist",
+          "View the playlist duration and creator",
+          "Customize it to make it your own"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/c_scale,h_1700,w_2500/v1674052799/Portfolio/Projects/Mellofy/MellofyStationDetails_qc8rml.png"
+      },
+      {
+        "showcaseTitle": "Forum/Chatapp",
+        "info": "As i tried to make something other then only spotify clone, I have implemented a custom Form/Chat in the app. both registered users and guests can participate in discussions by asking questions, responding to other questions, and liking others answers, with real-time updates.",
+        "info2": [
+          "Chat with real time response.",
+          "Ask a quetion/ join an ongoing conversations",
+          "Like a comment",
+          "Sort by most liked or date."
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/c_scale,h_1700,w_2500/v1674052804/Portfolio/Projects/Mellofy/MellofyForum_ntys4m.png"
+      },
+      {
+        "showcaseTitle": "Library Page",
+        "info": "The library page offers a more visual display of all the users playlists, which are also accessible from the side menu. On this page, playlists are presented in a clear and organized manner.",
+        "info2": [
+          "Acsess to each of your playlist",
+          "View all your playlists in clear and organized manner.",
+          "View followed playlist and playlist created by you"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/c_scale,h_1700,w_2500/v1674052801/Portfolio/Projects/Mellofy/MellofyLibraryPage_tfqx1t.png"
+      },
+      {
+        "showcaseTitle": "Search Engine",
+        "info": "The search engine has two different versions. The first version allows the user to search songs within Mellofy's database. If the desired song is not found, the second version allows the user to search for the song on the Youtube database and automatically add it to Mellofy's database.",
+        "info2": [
+          "Search songs in the Mellofy database",
+          "Add new songs from the Youtube database",
+          "Adding new songs automatically to Mellofy database"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/c_scale,h_1700,w_2500/v1674052807/Portfolio/Projects/Mellofy/MellofySearchEngine_xmrm5a.png"
+      },
+      {
+        "showcaseTitle": "Signup/Login Page",
+        "info": "I have created an e2e authentication flow, in which I am encrypting user's information.",
+        "info2": [
+          "Easy login/signup mechanism",
+          "Login/signup via google account",
+          "Fully encrypted user data using bcrypt"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/c_scale,h_1700,w_2500/v1674052798/Portfolio/Projects/Mellofy/MellofySignUpPage_zplkxd.png"
+      }
+    ],
+    "url": "https://mellofy-bynoambar.onrender.com/",
+    "repoLink": "https://github.com/NoamBar207/Spotify-Clone",
+    "dots": [
+      {
+        "title": "MERN Stack",
+        "desc": "MongoDB, Express, React, and Node.js.",
+        "icon": "fa-solid fa-cubes-stacked"
+      },
+      {
+        "title": "Other Libraries",
+        "desc": "Third party libraries - Redux, Socket.io, D&D, and more!",
+        "icon": "fa-solid fa-book"
+      },
+      {
+        "title": "Responsiveness",
+        "desc": "Fluent usage on all devices with full responsiveness.",
+        "icon": "fa-solid fa-laptop-code"
+      },
+      {
+        "title": "Security",
+        "desc": "Login auth with user info encrypted using bcrypt.",
+        "icon": "fa-solid fa-lock"
+      }
+    ],
+    "extraFeatures": [
+      "Drag & Drop support for changing your playlist order",
+      "Chat app for discussions and recomendations about songs",
+      "Maintining your playlist listeners by adding or removing listeners"
+    ]
+  },
+  {
+    "_id": "memegenerator",
+    "title": "Meme Generator",
+    "mainInfo": "Meme Generator - Create your own custom memes and share them whom ever you like. Built using Pure JS, and Canvas.",
+    "bg": "https://res.cloudinary.com/noambar/image/upload/v1674149177/Portfolio/Projects/fotor_2023-1-19_19_25_50_pdpwuq.png",
+    "features": [
+      {
+        "title": "Create & Customizen",
+        "desc": "Create meme, add text, stickers, change font size, change text color, and move lines around using drag & drop.",
+        "icon": "fa-solid fa-palette",
+        "myOwn": "Only On My App"
+      },
+      {
+        "title": "Share Your Own Memes",
+        "desc": "While creating a meme, you have the option to download it for free to your device and share it with whoever you like.",
+        "icon": "fa-solid fa-share",
+        "myOwn": "Only On My App"
+      },
+      {
+        "title": "Upload Your Own Backgorund",
+        "desc": "If you can't find the desired background image for your meme, you can easily upload one from your device.",
+        "icon": "fa-solid fa-upload",
+        "myOwn": "Only On My App"
+      },
+      {
+        "title": "Filter By Your Own Cohice",
+        "desc": "You have the option to filter the available meme backgrounds using your preferred keywords or by using free-text search.",
+        "icon": "fa-solid fa-filter",
+        "myOwn": "Only On My App"
+      }
+    ],
+    "technologies": "I created a custom meme generator using JavaScript, HTML5, and CSS. The app allows you to create and share your own memes using the HTML5 canvas element for customization. The layout is designed to be fully responsive for all devices",
+    "showcase": [
+      {
+        "showcaseTitle": "Gallery Page",
+        "info": "The home page serves as the front of the meme generator where users can choose from a variety of meme templates, filtered by keyword or free-text search.",
+        "info2": [
+          "Choose varitay of meme templates",
+          "Easily filter by keyword or free text"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1674150058/Portfolio/Projects/MemeGenerator/Homepage_btewbr.png"
+      },
+      {
+        "showcaseTitle": "Canvas Page",
+        "info": "Once you have selected a meme background, you will be taken to the canvas page. Here you can add text, stickers, adjust font size, change text color, and rearrange elements using drag-and-drop functionality. You also have the option to change the background image using the upload button.",
+        "info2": [
+          "Customize your meme with text stickers and more!",
+          "Uploading your on image and make it as backgorund of your meme",
+          "Rearange the meme text and stickers using D&D"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1674150052/Portfolio/Projects/MemeGenerator/MemeCanvas_hfzjwb.png"
+      },
+      {
+        "showcaseTitle": "About Page",
+        "info": "On this page, users are provided with clear instructions on how to use the app, as well as an explanation of the purpose and motivation behind the project.",
+        "info2": [
+          "Learn more about the meme generator project",
+          "Get instructions on how to use the meme generator"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1674150062/Portfolio/Projects/MemeGenerator/AboutPage_utrxt7.png"
+      },
+      {
+        "showcaseTitle": "And on Mobile!",
+        "info": "A taste of the mobile experience. I have used rem and em units, aspect ratio and more, to make The Meme Generator responsive with minimun effort.",
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675433773/Portfolio/Projects/MemeGenerator/MemeGeratorMobileFullPic_woenvi.png"
+      }
+    ],
+    "moreAbout": [
+      "I built this project in a short time frame of three days.",
+      "The technology stack used was pure JavaScript, CSS, and HTML5. The meme editor was created using the HTML5 canvas technology.",
+      "efore starting the project, I had a basic understanding of the canvas tag and needed to do further research during the three-day build.",
+      "In this project, I also learned a lot about event listeners, which were necessary for the canvas functionality.",
+      "I implemented my own drag-and-drop feature in the app using calculations of the width and height of each canvas element."
+    ],
+    "url": "https://memegenerator-noambar.onrender.com/",
+    "repoLink": "https://github.com/NoamBar207/MemeGenartor",
+    "dots": [
+      {
+        "title": "Pure Vanilla",
+        "desc": "Built using only Vanilla.js, CSS and HTML",
+        "icon": "fa-solid fa-cubes-stacked"
+      },
+      {
+        "title": "Canvas tag usage",
+        "desc": "Using the new canvas tag of HTML 5.",
+        "icon": "fa-solid fa-paintbrush"
+      },
+      {
+        "title": "Responsiveness",
+        "desc": "Fluent usage on all devices with full responsiveness.",
+        "icon": "fa-solid fa-laptop-code"
+      },
+      {
+        "title": "Sprint Project",
+        "desc": "Built at sprit pace, 3 days.",
+        "icon": "fa-solid fa-jet-fighter-up"
+      }
+    ]
+  },
+  {
+    "_id": "minesweeper",
+    "title": "Mine Sweeper",
+    "mainInfo": "Mine Sweeper - The same game but with some featers as - hints, lives and safe clicks - built using JS HTML and CSS.",
+    "bg": "https://res.cloudinary.com/noambar/image/upload/v1674565363/Portfolio/Projects/fotor_2023-1-24_15_2_3_xeqxeq.png",
+    "features": [
+      {
+        "title": "Diffiuclty Select By You",
+        "desc": "Users can easily switch between different levels of difficulty by pressing the buttons below.",
+        "icon": "fa-solid fa-hand-pointer"
+      },
+      {
+        "title": "Lives for Game",
+        "desc": "In each mode you have three lives - you can hit up to 3 graneds.",
+        "icon": "fa-solid fa-heart"
+      },
+      {
+        "title": "Safe Button/Click",
+        "desc": "When you click, the game reveals a safe cell, which is not a mine, for a short period of time.",
+        "icon": "fa-solid fa-helmet-safety"
+      },
+      {
+        "title": "Hint Button/Click",
+        "desc": "After clicking, you can choose a cell to be revealed, along with its neighbors, for a short period of time.",
+        "icon": "fa-solid fa-lightbulb"
+      }
+    ],
+    "dots": [
+      {
+        "title": "Vanila JS App",
+        "desc": "Built using JavaScript HTML and CSS, by MVC pattern.",
+        "icon": "fa-solid fa-cubes-stacked"
+      },
+      {
+        "title": "Sprint Project",
+        "desc": "Built at sprit pace as my first sprint project.",
+        "icon": "fa-solid fa-jet-fighter-up"
+      },
+      {
+        "title": "Select Your Difficulty",
+        "desc": "Choose your level of difficulty easily!",
+        "icon": "fa-solid fa-hand-pointer"
+      },
+      {
+        "title": "More Features Included",
+        "desc": "Alot of diffrent features for you to make the game more enjoyable.",
+        "icon": "fa-solid fa-laptop-code"
+      }
+    ],
+    "technologies": "The technology stack I used for this project includes DHTML, JavaScript, CSS, and HTML5. It was a sprint build and I had only 2 days to complete it. This project was mainly focused on gaining more experience in JavaScript, HTML, and CSS",
+    "url": "https://memegenerator-noambar.onrender.com/"
+  },
+  {
+    "_id": "portfolio",
+    "title": "This Portfolio",
+    "mainInfo": "My Portfolio - This project was built using Vue. It was my first experience with Vue.",
+    "bg": "https://res.cloudinary.com/noambar/image/upload/v1675073347/Portfolio/Projects/PortfolioFullPic_fvdg8i.png",
+    "features": [
+      {
+        "title": "My Projects",
+        "desc": "You can view my latest projects such as Mellofy (a Spotify clone) and Mello (a Trello clone).",
+        "icon": "fa-solid fa-briefcase"
+      },
+      {
+        "title": "My Tech Stack",
+        "desc": "HTML, Css, Scss, JavaScript, React, Node.js, MongoDB, Vue, Angular and more!.",
+        "icon": "fa-brands fa-stack-overflow"
+      },
+      {
+        "title": "About Me",
+        "desc": "Learn more about me, including my interests and background, on the 'About Me' page.",
+        "icon": "fa-solid fa-address-card"
+      },
+      {
+        "title": "Contact Me",
+        "desc": "You can easily contact me via email using the contact form on the website. My contact information is also available at the bottom of the page.",
+        "icon": "fa-solid fa-comments"
+      }
+    ],
+    "dots": [
+      {
+        "title": "Vue App",
+        "desc": "Built using Vue",
+        "icon": "fa-solid fa-cubes-stacked"
+      },
+      {
+        "title": "Other Libraries",
+        "desc": "Third party libraries - Vanta.Js, MailJs and more!",
+        "icon": "fa-solid fa-book"
+      },
+      {
+        "title": "Responsiveness",
+        "desc": "Fluent usage on all devices with full responsiveness.",
+        "icon": "fa-solid fa-laptop-code"
+      },
+      {
+        "title": "First Vue Using",
+        "desc": "Built as my portfolio and also to learn VueJS.",
+        "icon": "fa-brands fa-vuejs"
+      }
+    ],
+    "technologies": "The technology stack I used for this project includes Vue 3 as the framework, Vite as the build tool, JavaScript as the programming language, and SCSS for styling. It took me about 2 weeks to complete. This was my first experience with Vue as a developer and was mainly focused on gaining experience with the framework.",
+    "showcase": [
+      {
+        "showcaseTitle": "Home Page",
+        "info": "The home page serves as the front of my portfolio. Its mainly a summery of my projects and 'technologies' I use. Also you can contact me, as for any other page, via the contact component.",
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675351019/Portfolio/Projects/Portfolio%20Imgs/HomePage_k5itbf.png"
+      },
+      {
+        "showcaseTitle": "About Project Page",
+        "info": "On this page, you can read about and visit each of my projects. You can learn about the technology stacks I used and see the technologies in action. I've also included a 'showcase' carousel for each project, and some projects have additional information available.",
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675351020/Portfolio/Projects/Portfolio%20Imgs/PojectPage_cuzp8j.png"
+      },
+      {
+        "showcaseTitle": "About Me Page",
+        "info": "On this page, you can learn more about me, including my areas of expertise, hobbies, military service, and professional experience.",
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675072794/Portfolio/Projects/Portfolio%20Imgs/AboutMe_gzundw.png"
+      },
+      {
+        "showcaseTitle": "And On Mobile!",
+        "info": "A taste of the mobile experience. I have used mixins, rem and em units, aspect ratio and more, to make my website responsive with minimun effort.",
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675350439/Portfolio/Projects/Portfolio%20Imgs/PortFolioMobilefull_huafv2.png"
+      }
+    ],
+    "moreAbout": [
+      "I built this portfolio and it was my first experience with Vue. It took me about 2 weeks, with most of the time spent on design and styling.",
+      "The project is based on Vue and SCSS. I used Vue 3 with Vite as the build tool.",
+      "Before starting, I had no prior experience with Vue, but I learned it through research and self-study.",
+      "During this project, I gained a lot of knowledge about event listeners, communication between components, Vue directives, and the basics of Vue.",
+      "The main goal of this project was to learn more about the Vue framework and create a more visually appealing CV for myself."
+    ],
+    "repoLink": "https://github.com/NoamBar207/My-Portfolio"
+  },
+  {
+    "_id": "misterbitcoin",
+    "title": "Mister Bitcoin",
+    "mainInfo": "Mister Bitcoin - This project was built using Angular and TypeScript. It was my first experience with both technologies. It is a CRUD (Create, Read, Update, Delete) application which inspired by Bit.",
+    "bg": "https://res.cloudinary.com/noambar/image/upload/v1675160598/Portfolio/Projects/MisterBitcoinAngularFullPic_vhsjw5.png",
+    "features": [
+      {
+        "title": "Create",
+        "desc": "You can create as many contacts as you desire and they will be automatically saved, just click on the add button (plus icon) at the buttom of the page.",
+        "icon": "fa-solid fa-square-plus"
+      },
+      {
+        "title": "Read",
+        "desc": "By hovering over a contact, you can view their information and transaction history by clicking the 'info' button (plus icon).",
+        "icon": "fa-brands fa-readme"
+      },
+      {
+        "title": "Update",
+        "desc": "By hovering over a contact, you can click the edit button (pen icon) and make changes to their information using an edit modal.",
+        "icon": "fa-solid fa-pen"
+      },
+      {
+        "title": "Remove",
+        "desc": "By hovering over a contact, you can delete it from your contact list by clicking the delete button (trash can icon).",
+        "icon": "fa-solid fa-square-minus"
+      }
+    ],
+    "dots": [
+      {
+        "title": "Angular App",
+        "desc": "Built using Angular and Typescript",
+        "icon": "fa-solid fa-cubes-stacked"
+      },
+      {
+        "title": "Other Libraries",
+        "desc": "Third party libraries - NgRx, google-charts and more!",
+        "icon": "fa-solid fa-book"
+      },
+      {
+        "title": "Responsiveness",
+        "desc": "Fluent usage on all devices with full responsiveness.",
+        "icon": "fa-solid fa-laptop-code"
+      },
+      {
+        "title": "Sprint Project",
+        "desc": "Built at sprit pace while learning angular and typescript.",
+        "icon": "fa-solid fa-jet-fighter-up"
+      }
+    ],
+    "technologies": "The technology stack I used for this project is Angular as the framework, TypeScript as the programming language, and Scss for styling. It took me less than a week to complete. This was my first experience with Angular and TypeScript and I mainly built this project to gain experience with these technologies.",
+    "showcase": [
+      {
+        "showcaseTitle": "HomePage",
+        "info": "The Homepage serves as the front of the app. To use the app, you need to enter your name as a login. From the Homepage, you can access the history of Bitcoin throughout the years and view your complete transaction history.",
+        "info2": [
+          "Easy login/signup mechanism",
+          "See your transition history",
+          "See the offical data of bitcoin market price and transction history per day"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675160690/Portfolio/Projects/MisterBitcoin/HomePage_oc2dey.png"
+      },
+      {
+        "showcaseTitle": "Contact List Page",
+        "info": "On the Contact List page, you can view your contact list. To add a contact, simply click the plus button at the bottom of the page.",
+        "info2": [
+          "View your contact list",
+          "Create or remove contact from your contact list",
+          "Edit contact information using the pen button",
+          "Acsess more information about each contact using the plus button"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675160696/Portfolio/Projects/MisterBitcoin/ContactList_fm9ijl.png"
+      },
+      {
+        "showcaseTitle": "Contact Details Page",
+        "info": "On the Contact Details Page, you can view the transaction history between you and a specific contact, as well as their information.",
+        "info2": [
+          "Make a transiction to the selected contact",
+          "View the transction history of the selected contact"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675160696/Portfolio/Projects/MisterBitcoin/ContactDetails_sqr8vw.png"
+      },
+      {
+        "showcaseTitle": "Edit Contact Modal",
+        "info": "You can edit a contact by hovering over it and clicking the pen button. This will open an edit modal where you can update the contact information. The changes will be reflected in real time and will be automatically saved.",
+        "info2": [
+          "Edit contact information such as name phone number and email address",
+          "Every change will be reflected in real time response on the contact list"
+        ],
+        "img": "https://res.cloudinary.com/noambar/image/upload/v1675160685/Portfolio/Projects/MisterBitcoin/EditContactModal_almfs5.png"
+      }
+    ],
+    "moreAbout": [
+      "This project was built by me. It was my first experience with Angular and TypeScript and took less than a week.",
+      "The projects is based on Angular as framwork, TypeScript as programming language and Scss for styling.",
+      "Before starting the project I havent used Angular nor TypeScript.  I researched and learned it by myself.",
+      "I learned about components, services, modules, and how to use them in Angular.",
+      "Additionally, I learned about the benefits of using TypeScript over plain JavaScript, such as stronger typing and improved code quality."
+    ],
+    "url": "https://noambar207.github.io/MisterBitcoin-Angular/#/",
+    "repoLink": "https://github.com/NoamBar207/MisterBitcoin-Angular"
+  }
+]
