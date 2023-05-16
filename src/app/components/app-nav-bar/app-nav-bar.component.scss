@@ -10,32 +10,32 @@
 
   .app-nav-bar-actions {
     @include flex-center;
-    gap: 16px;
+    gap: 4px;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    padding: 24px;
+    padding: 12px;
     border-radius: 54px;
 
     button {
+      padding: 12px;
       span {
         font-size: 16px;
         color: $clr-secondary-txt;
       }
 
-      :hover {
-        // color: $clr-main-txt;
-        color: white;
+      &:hover {
+        span {
+          color: white;
+        }
       }
     }
+
     a {
       cursor: pointer;
       span {
         font-size: 16px;
         color: $clr-secondary-txt;
-      }
-      &:active {
-        background-color: aqua;
       }
     }
   }

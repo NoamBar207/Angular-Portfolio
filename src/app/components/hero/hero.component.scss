@@ -116,7 +116,7 @@
 @include for-tablet-layout {
   .hero-container {
     .hero-content {
-      margin-top: 40px;
+      margin-top: -20px;
       padding: 0 30px;
       gap: 36px;
       .hero-hex {
@@ -141,7 +141,7 @@
 @include for-mobile-layout {
   .hero-container {
     .hero-content {
-      margin-top: 50px;
+      margin-top: -10px;
       padding: 0 30px;
       .hero-hex {
         height: 40%;
@@ -153,7 +153,7 @@
 @include for-narrow-mobile-layout {
   .hero-container {
     .hero-content {
-      margin-top: 32px;
+      // margin-top: -10px;
       .hero-hex {
         height: 35%;
         .hero-img {

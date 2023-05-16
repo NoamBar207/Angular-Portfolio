@@ -16,6 +16,7 @@
 
       ::ng-deep section-header {
         position: absolute;
+        text-align: center;
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
@@ -157,6 +158,22 @@
             :first-child {
               font-size: 16px;
               width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project-details-container {
+    .project-content {
+      .header-container {
+        ::ng-deep section-header {
+          .about-me-header {
+            :nth-child(2) {
+              font-size: 32px;
             }
           }
         }

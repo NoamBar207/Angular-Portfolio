@@ -28,6 +28,7 @@ import { AboutProjectComponent } from './components/about-project/about-project.
 import { ProjectCarouselComponent } from './components/project-carousel/project-carousel.component';
 import { AngularTiltModule } from 'angular-tilt';
 import { ProjectFeaturesComponent } from './components/project-features/project-features.component';
+import { MsgModalComponent } from './components/msg-modal/msg-modal.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ProjectFeaturesComponent } from './components/project-features/project-
     AboutProjectComponent,
     ProjectCarouselComponent,
     ProjectFeaturesComponent,
+    MsgModalComponent,
   ],
   imports: [
     BrowserModule,

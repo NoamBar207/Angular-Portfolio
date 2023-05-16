@@ -7,7 +7,7 @@
         <div class="contact-cards-container">
             <div class="card contact-card" *ngFor="let card of contactCards"
                 [ngsRevealSet]="{ reset:false, origin:'left',distance:'70px'}" [ngsInterval]="200"
-                [ngsSelector]="'.contact-card'" aTilt>
+                [ngsSelector]="'.contact-card'" aTilt (click)="openLink(card.link!)">
                 <span class="card-icon"><i [class]="card.icon"></i></span>
                 <h4>{{card.title}}</h4>
                 <h5>{{card.desc}}</h5>
@@ -17,22 +17,25 @@
         </div>
         <div class="contact-form" [ngsReveal]="{reset:false, origin:'right', distance:'150px'}">
             <h1>Or <span>Mail Me</span> Here!</h1>
-            <form (submit)="sendEmail($event)">
+            <form (submit)="sendEmail($event)" [formGroup]="form">
                 <div class="input-wrap">
-                    <input name="name" type="text" class="input-text" (focusout)="handleFoucusOut($event)" required />
-                    <label class="floating-label">What is your name?</label>
+                    <input formControlName="name" name="name" type="text" class="input-text"
+                        (focusout)="handleFoucusOut($event)" required />
+                    <label class="floating-label">Your Name</label>
                 </div>
                 <div class="input-wrap" (focusout)="handleFoucusOut($event)">
-                    <input name="email" type="email" class="input-text" required ngModel email="true" />
-                    <label class="floating-label" id="email">What is your email?</label>
+                    <input formControlName="email" name="email" type="email" class="input-text" required ngModel
+                        email="true" />
+                    <label class="floating-label" id="email">Your Email</label>
                 </div>
                 <div class="input-wrap">
-                    <textarea name="message" class="input-text textarea" (focusout)="handleFoucusOut($event)"
-                        required></textarea>
-                    <label class="floating-label">Write message here</label>
+                    <textarea formControlName="message" name=" message" class="input-text textarea"
+                        (focusout)="handleFoucusOut($event)" required></textarea>
+                    <label class="floating-label">Write Your Message...</label>
                 </div>
                 <button class="util-btn" type="submit">Send</button>
             </form>
+            <msg-modal [msg]="mailResponse" [mailResponseStyle]="mailResponseStyle" *ngIf="mailResponse"></msg-modal>
         </div>
     </article>
 </section>

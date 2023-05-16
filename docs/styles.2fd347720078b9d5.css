@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap";@charset "UTF-8";@keyframes floatingImage{0%{transform:translateY(0)}50%{transform:translateY(-24px)}to{transform:translateY(0)}}@keyframes scaleUp{0%{transform:scale(0)}to{transform:scale(1)}}/*!
+@import"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap";@charset "UTF-8";@keyframes floatingImage{0%{transform:translateY(0)}50%{transform:translateY(-24px)}to{transform:translateY(0)}}@keyframes scaleUp{0%{transform:scale(0)}to{transform:scale(1)}}@keyframes popMsgAnimation{0%{right:-100%}25%{right:100%}75%{right:100%}to{right:-100%}}/*!
  * CoreUI - HTML, CSS, and JavaScript UI Components Library
  * @version v4.2.6
  * @link https://coreui.io/

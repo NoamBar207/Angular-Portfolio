@@ -27,6 +27,21 @@ $clr-exclusive-bg: #76ce85;
   }
 }
 
+@keyframes popMsgAnimation {
+  0% {
+    right: -100%;
+  }
+  25% {
+    right: 100%;
+  }
+  75% {
+    right: 100%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
 // @keyframes scaleDown {
 //   0% {
 //     transform: scale(100%);
