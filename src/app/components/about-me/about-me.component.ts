@@ -18,13 +18,13 @@ export class AboutMeComponent implements OnInit {
   cardsArr: IAboutMeCard[] = [
     {
       title: 'Experience',
-      desc: 'Junior',
+      desc: '3+ Years (Frontend & Fullstack)',
       icon: 'fa-solid fa-award',
     },
     {
-      title: 'Volunteer',
-      desc: '4 Months As FullStack',
-      icon: 'fa-solid fa-handshake-angle',
+      title: 'Current Role',
+      desc: 'Frontend Developer at Moovit',
+      icon: 'fa-solid fa-briefcase',
     },
     {
       title: 'Projects',
