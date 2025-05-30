@@ -3,7 +3,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "5.0"
   },
   "files": [
     "src/main.ts",
