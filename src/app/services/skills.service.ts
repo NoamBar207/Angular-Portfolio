@@ -7,63 +7,36 @@ import { IDevelopTech, ISkill } from '../interfaces/skill.model';
 })
 export class SkillsService {
   constructor() {}
-
   private frontendSkills: ISkill[] = [
-    {
-      name: 'HTML',
-    },
-    {
-      name: 'CSS',
-    },
-    {
-      name: 'Bootstrap',
-    },
-    {
-      name: 'TailwindCSS',
-    },
-    {
-      name: 'SCSS',
-    },
+    { name: 'Angular' },
+    { name: 'React' },
+    { name: 'Vue' },
+    { name: 'Redux' },
+    { name: 'Next.js' },
+    { name: 'SCSS' },
+    { name: 'TailwindCSS' },
+    { name: 'Figma' },
   ];
+
   private backendSkills: ISkill[] = [
-    {
-      name: 'Node.Js',
-    },
-    {
-      name: 'MongoDB',
-    },
-    {
-      name: 'Socket.io',
-    },
-    {
-      name: 'Express.js',
-    },
-    {
-      name: 'MySQL',
-    },
+    { name: 'Express.js' },
+    { name: 'MongoDB' },
+    { name: 'MySQL' },
+    { name: 'Node.Js' },
+    { name: 'Socket.io' },
+    { name: 'SQL' },
+    { name: 'AWS' },
   ];
-  private langAndFrameSkills: ISkill[] = [
-    {
-      name: 'JavaScript',
-    },
-    {
-      name: 'TypeScript',
-    },
-    {
-      name: 'React',
-    },
-    {
-      name: 'Angular',
-    },
-    {
-      name: 'Vue',
-    },
-    {
-      name: 'C',
-    },
-    {
-      name: 'C++',
-    },
+
+  private toolSkills: ISkill[] = [
+    { name: 'JavaScript' },
+    { name: 'TypeScript' },
+    { name: 'C' },
+    { name: 'C++' },
+    { name: 'ObjectScript' },
+    { name: 'Git' },
+    { name: 'Jenkins' },
+    { name: 'Google Analytics' },
   ];
 
   private _developTechDb: IDevelopTech[] = [
@@ -76,8 +49,8 @@ export class SkillsService {
       techSkills: this.backendSkills,
     },
     {
-      name: 'Languages / Frameworks',
-      techSkills: this.langAndFrameSkills,
+      name: 'Languages / Tools',
+      techSkills: this.toolSkills,
     },
   ];
 
