@@ -12,7 +12,7 @@ export class SkillsComponent implements OnInit {
   @Input() developTech!: IDevelopTech[];
 
   info: ISectionHeader = {
-    main: 'MY EXPERIENCE',
+    main: 'MY SKILLS',
     prev: 'What Skills I Have',
   };
 
