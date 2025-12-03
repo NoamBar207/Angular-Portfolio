@@ -14,21 +14,19 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { MediaBtnsComponent } from './components/util-cmps/media-btns/media-btns.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SectionHeaderComponent } from './components/util-cmps/section-header/section-header.component';
-import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppNavBarComponent } from './components/app-nav-bar/app-nav-bar.component';
 import { CardComponent } from './components/util-cmps/card/card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
-import { NgsRevealModule } from 'ngx-scrollreveal';
 import { CarouselComponent } from './components/util-cmps/carousel/carousel.component';
 import { CarouselModule } from '@coreui/angular';
 import { AboutProjectComponent } from './components/about-project/about-project.component';
 import { ProjectCarouselComponent } from './components/project-carousel/project-carousel.component';
-import { AngularTiltModule } from 'angular-tilt';
 import { ProjectFeaturesComponent } from './components/project-features/project-features.component';
 import { MsgModalComponent } from './components/msg-modal/msg-modal.component';
+import { NgxTypewriterComponent } from '@omnedia/ngx-typewriter';
 
 @NgModule({
   declarations: [
@@ -57,13 +55,11 @@ import { MsgModalComponent } from './components/msg-modal/msg-modal.component';
     BrowserModule,
     AppRoutingModule,
     NgParticlesModule,
-    AngularTypewriterEffectModule,
+    NgxTypewriterComponent,
     FormsModule,
     ReactiveFormsModule,
-    NgsRevealModule,
     CarouselModule,
     BrowserAnimationsModule,
-    AngularTiltModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

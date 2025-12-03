@@ -6,9 +6,16 @@
   width: 100%;
   font-weight: 500;
   position: relative;
+  color: white;
 
   .card-icon {
     font-size: 24px;
+    color: white;
+  }
+
+  .card-title {
+    color: white;
+    font-weight: 600;
   }
 
   .card-main-text {

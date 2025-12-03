@@ -1,6 +1,14 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+
+## Installation
+
+When installing dependencies, use `--legacy-peer-deps` flag due to some peer dependency conflicts with older packages:
+
+```bash
+npm install --legacy-peer-deps
+```
 
 ## Development server
 

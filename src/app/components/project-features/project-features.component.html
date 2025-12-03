@@ -1,9 +1,8 @@
 <section class="project-features-container" id="project-features-container">
     <section-header [info]="info"></section-header>
     <div class="features-container">
-        <card *ngFor=" let feature of project.features" class="project-feature" [card]="feature"
-            [ngsRevealSet]="{ reset:false, origin:'bottom', distance:'125px'}" [ngsInterval]="100"
-            [ngsSelector]="'.project-feature'" aTilt>
+        <card *ngFor="let feature of project.features; let i = index" class="project-feature" [card]="feature"
+            data-aos="fade-up" [attr.data-aos-delay]="i * 100">
         </card>
     </div>
 </section>

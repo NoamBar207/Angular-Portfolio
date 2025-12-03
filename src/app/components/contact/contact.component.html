@@ -5,9 +5,8 @@
     <section-header [info]="info"></section-header>
     <article class="contact-content-container">
         <div class="contact-cards-container">
-            <div class="card contact-card" *ngFor="let card of contactCards"
-                [ngsRevealSet]="{ reset:false, origin:'left',distance:'70px'}" [ngsInterval]="200"
-                [ngsSelector]="'.contact-card'" aTilt (click)="openLink(card.link!)">
+            <div class="card contact-card" *ngFor="let card of contactCards; let i = index"
+                data-aos="fade-right" [attr.data-aos-delay]="i * 200" (click)="openLink(card.link!)">
                 <span class="card-icon"><i [class]="card.icon"></i></span>
                 <h4>{{card.title}}</h4>
                 <h5>{{card.desc}}</h5>
@@ -15,7 +14,7 @@
             </div>
 
         </div>
-        <div class="contact-form" [ngsReveal]="{reset:false, origin:'right', distance:'150px'}">
+        <div class="contact-form" data-aos="fade-left">
             <h1>Or <span>Mail Me</span> Here!</h1>
             <form (submit)="sendEmail($event)" [formGroup]="form">
                 <div class="input-wrap">

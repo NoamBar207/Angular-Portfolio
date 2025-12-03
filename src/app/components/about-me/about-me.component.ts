@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { NgsRevealConfig } from 'ngx-scrollreveal';
 import { IAboutMeCard } from 'src/app/interfaces/about.me.card.model';
 import { ISectionHeader } from 'src/app/interfaces/section-header.model';
 
@@ -7,7 +6,6 @@ import { ISectionHeader } from 'src/app/interfaces/section-header.model';
   selector: 'about-me',
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss'],
-  providers: [NgsRevealConfig],
 })
 export class AboutMeComponent implements OnInit {
   info: ISectionHeader = {
@@ -27,9 +25,9 @@ export class AboutMeComponent implements OnInit {
       icon: 'fa-solid fa-briefcase',
     },
     {
-      title: 'Projects',
-      desc: '10+ Completed',
-      icon: 'fa-solid fa-file-lines',
+      title: 'Philosophy',
+      desc: 'Clean Code & Collaboration',
+      icon: 'fa-solid fa-heart',
     },
   ];
 

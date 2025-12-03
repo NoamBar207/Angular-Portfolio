@@ -1,33 +1,29 @@
 <section class="about-me-container" id="about-me-container">
     <section-header [info]="info"></section-header>
     <main class="about-me-content">
-        <article class="about-me-desc" [ngsReveal]="{origin:'left', distance:'150px'}">
+        <article class="about-me-desc" data-aos="fade-right">
             <div class="about-me-cards">
-                <div *ngFor="let card of cardsArr" class="about-me-card"
-                    [ngsRevealSet]="{ reset:false, origin:'left', distance:'125px'}" [ngsInterval]="100"
-                    [ngsSelector]="'.about-me-card-container'" aTilt>
+                <div *ngFor="let card of cardsArr; let i = index" class="about-me-card"
+                    data-aos="fade-right" [attr.data-aos-delay]="i * 100">
                     <card [card]="card"></card>
                 </div>
             </div>
             <div class="about-me-content-text">
                 Full Stack Developer with proven experience in both startup and enterprise environments, including roles at Moovit, Matrix, and Mityaalim.
                 <br>
-                I’ve built and optimized real-world applications using React, Angular, Node.js, and TypeScript, working closely with design and product teams to deliver responsive, high-performance features. 
+                I've built and optimized real-world applications using React, Angular, Node.js, and TypeScript, working closely with design and product teams to deliver responsive, high-performance features. 
                 <br>
                 I'm passionate about clean code, team collaboration, and continuous learning.
                 <br>
-                Graduate of Coding Academy’s 640-hour Full-Stack Bootcamp.
+                Graduate of Coding Academy's 640-hour Full-Stack Bootcamp.
             </div>
-            <button class="util-btn big-btn" (click)="onScroll.emit('contact-container')"
-                (ngsReveal)="{reset:true}">Let's Talk</button>
+            <button class="util-btn big-btn" (click)="onScroll.emit('contact-container')">Let's Talk</button>
         </article>
-        <article class="about-me-img-container" [ngsReveal]="{origin:'right', distance:'150px'}">
-            <div class="about-hex" aTilt
+        <article class="about-me-img-container" data-aos="fade-left">
+            <div class="about-hex"
                 style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1679926922/hexagon-geometrical-shape-outline-svgrepo-com_2_cwnvhe.png')">
                 <div class="about-img"
                     style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1679934154/IMG_3229-A8feNfIJC-transformed-transformed_vp12ed_9a9688.png')">
-                    <!-- style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1679926389/IMG_3229-A8feNfIJC-transformed-transformed_vp12ed.png')"> -->
-                    <!-- style="background-image: url('https://res.cloudinary.com/noambar/image/upload/v1680267649/IMG_3211--QdxVEMTT-transformed_cd8rxf.png')" -->
                 </div>
             </div>
         </article>

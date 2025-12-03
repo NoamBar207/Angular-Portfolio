@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ISectionHeader } from 'src/app/interfaces/section-header.model';
 import { IProject } from '../../interfaces/project.model';
-import { NgsRevealConfig } from 'ngx-scrollreveal';
 
 @Component({
   selector: 'project-list',

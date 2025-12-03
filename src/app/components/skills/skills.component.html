@@ -1,9 +1,8 @@
 <section class="skills-cmp-container" id="skills-cmp-container">
     <section-header [info]="info"></section-header>
     <article class="cards-container">
-        <div *ngFor="let tech of developTech" class="card"
-            [ngsRevealSet]="{ reset:false, origin:'bottom', distance:'125px'}" [ngsInterval]="100"
-            [ngsSelector]="'.card'" aTilt>
+        <div *ngFor="let tech of developTech; let i = index" class="card"
+            data-aos="fade-up" [attr.data-aos-delay]="i * 100">
             <h1>{{tech.name}}</h1>
             <div class="skills-card">
                 <span *ngFor="let skill of tech.techSkills" class="skill-line">

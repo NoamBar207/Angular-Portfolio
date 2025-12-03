@@ -1,9 +1,9 @@
 <section class="about-project-container" id="about-project-container">
     <section-header [info]="info"></section-header>
     <article class="about-project-content">
-        <div class="project-desc" [ngsReveal]="{origin:'left', distance:'150px'}">
+        <div class="project-desc" data-aos="fade-right">
             <div class="project-dots-container">
-                <card *ngFor="let dot of project.dots" [card]="dot" aTilt></card>
+                <card *ngFor="let dot of project.dots" [card]="dot"></card>
             </div>
             <h3 class="project-info">{{ project.mainInfo }}</h3>
             <div class="actions">
@@ -16,6 +16,6 @@
             </div>
         </div>
         <div class="project-img" style="background-image:url({{project.bg}})"
-            [ngsReveal]="{origin:'right', distance:'150px'}" aTilt></div>
+            data-aos="fade-left"></div>
     </article>
 </section>
